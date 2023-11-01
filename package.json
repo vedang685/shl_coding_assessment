@@ -1,6 +1,7 @@
 {
   "name": "shl_coding_assessment",
   "version": "0.1.0",
+  "proxy": "http://localhost:6000",
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.7.3",
