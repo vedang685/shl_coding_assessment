@@ -1,5 +1,4 @@
 # Project Name
-
 SHL Coding Assessment
 
 ## Table of Contents
@@ -27,5 +26,3 @@ SHL Coding Assessment
 
 ## Video Presentation
 <a>https://youtu.be/I4jfGziySDc</a>
-
-Feel free to update and customize the sections according to your project's specific details and requirements. This README will serve as a helpful introduction to your project for visitors and potential collaborators.
