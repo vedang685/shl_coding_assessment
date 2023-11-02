@@ -85,7 +85,7 @@ export default function Card({data}) {
         <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Databases</p>
         {typeof databaseSkill === 'undefined'?( <p>-</p>):(<p className='mb-1 mt-1'>{databaseSkill}</p>)}
         <p className='text-sm text-gray-500'>Technical Skillset Infrastructure</p>
-        {typeof databaseSkill === 'undefined'?( <p>-</p>):(<p className='mb-1 mt-1'>{infrastructure}</p>)}
+        {typeof infrastructure === 'undefined'?( <p>-</p>):(<p className='mb-1 mt-1'>{infrastructure}</p>)}
       </animated.div>
     </div>
   );

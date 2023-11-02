@@ -12,7 +12,7 @@ export default function CardDetails({ data, onClose }) {
 
   return (
     <div className="card-details-modal">
-        <div className=" border-red-500 border-2 rounded-lg p-4">
+        <div className=" border-red-200 border-2 rounded-lg p-6 shadow-lg">
             <p className='text-lg mb-1 mt-1'>Project {projectTitle}</p>
             <div className='border-gray border-2'></div>
             <p className='text-lg text-gray-500 mb-1 mt-4'>Title</p>
