@@ -7,7 +7,15 @@ import styles from './styles.module.css';
 const calcX = (y, ly) => -(y - ly - window.innerHeight / 2) / 20;
 const calcY = (x, lx) => (x - lx - window.innerWidth / 2) / 20;
 
-export default function Card() {
+export default function Card({data}) {
+
+  const projectTitle = data.Project.Title;
+  const technologies = data.Project.Technologies;
+  const frontendSkill = data.Technical_Skillset.Frontend;
+  const backendSkill = data.Technical_Skillset.Backend;
+  const databaseSkill = data.Technical_Skillset.Databases;
+  const infrastructure = data.Technical_Skillset.Infrastructre;
+
   useEffect(() => {
     const preventDefault = (e) => e.preventDefault();
     document.addEventListener('gesturestart', preventDefault);
@@ -66,6 +74,18 @@ export default function Card() {
           rotateY,
           rotateZ,
         }}>
+        <p className='text-sm text-gray-500 mb-2'>Title</p>
+        <p className='text-lg mb-1 mt-1'>Project {projectTitle}</p>
+        <p className='text-sm text-gray-500 mb-1 mt-1'>Project Technologies</p>
+        <p>Technologies: {technologies}</p>
+        <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Frontend</p>
+        <p>{frontendSkill}</p>
+        <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Backend</p>
+        <p>{backendSkill}</p>
+        <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Databases</p>
+        {typeof databaseSkill === 'undefined'?( <p>-</p>):(<p className='mb-1 mt-1'>{databaseSkill}</p>)}
+        <p className='text-sm text-gray-500'>Technical Skillset Infrastructure</p>
+        {typeof databaseSkill === 'undefined'?( <p>-</p>):(<p className='mb-1 mt-1'>{infrastructure}</p>)}
       </animated.div>
     </div>
   );
