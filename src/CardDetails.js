@@ -18,7 +18,7 @@ export default function CardDetails({ data, onClose }) {
             <p className='text-lg text-gray-500 mb-1 mt-4'>Title</p>
             <p>Project {projectTitle}</p>
             <p className='text-sm text-gray-500 mb-1 mt-2'>Project Technologies</p>
-            <p>Technologies: {technologies}</p>
+            <p>{technologies}</p>
             <p className='text-sm text-gray-500 mb-1 mt-2'>Technical Skillset Frontend</p>
             <p>{frontendSkill}</p>
             <p className='text-sm text-gray-500 mb-1 mt-2'>Technical Skillset Backend</p>

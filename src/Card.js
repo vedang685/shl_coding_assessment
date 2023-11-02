@@ -77,7 +77,7 @@ export default function Card({data}) {
         <p className='text-sm text-gray-500 mb-2'>Title</p>
         <p className='text-lg mb-1 mt-1'>Project {projectTitle}</p>
         <p className='text-sm text-gray-500 mb-1 mt-1'>Project Technologies</p>
-        <p>Technologies: {technologies}</p>
+        <p>{technologies}</p>
         <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Frontend</p>
         <p>{frontendSkill}</p>
         <p className='text-sm text-gray-500 mb-1 mt-1'>Technical Skillset Backend</p>
